@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Summoner Timers</string>
+
+    <string name="disclaimer1">"Summoner Timers version: 1.0.3.14.16\nLeague of Legends patch 6.5\nMarch 11 2016\nDeveloped by Andrew Gawoski"</string>
+    <string name="disclaimer2">"Summoner Timers isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends© Riot Games, Inc."</string>
+    <string name="disclaimer3">"This application was developed primarily for personal use by Andrew Gawoski as a personal project as a university student. It does not provide a valid Riot Games API key for usage with the application. As a developer, I've done my best to prevent issues with the automatic entry option but bugs or other issues are possible."</string>
+    <string name="disclaimerButton">Return</string>
+
+    <string name="buttonAutomatic">Automatic Entry\n\n(API Key Required)</string>
+    <string name="buttonManual">Manual Entry</string>
+    <string name="buttonAbout">About</string>
+    <string name="buttonSettings">Settings</string>
+
+    <string name="buttonBack">Back</string>
+    <string name="buttonConfirm">Confirm</string>
+
+    <string name="buttonSelect">Select</string>
+    <string name="defaultName">Champion</string>
+
+    <string name="fullTeam">Team Size Full</string>
+
+    <string name="continueButton">Continue</string>
+</resources>

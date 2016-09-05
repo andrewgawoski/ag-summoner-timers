@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".KeyEntryActivity"
+    android:background="@color/demacia_blue">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="2dp"
+        android:background="@color/demacia_gold">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/demacia_blue"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="API Key:"
+                android:id="@+id/textViewKeyRequest"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/demacia_gold"
+                android:layout_marginBottom="2dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/demacia_gold"
+                android:layout_marginBottom="8dp"
+                android:padding="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/demacia_blue"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="6dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editTextKey"
+                        android:password="false"
+                        android:maxLines="1"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/demacia_gold" />
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summoner Name:"
+                android:id="@+id/textViewNameRequest"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/demacia_gold"
+                android:layout_marginBottom="2dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/demacia_gold"
+                android:padding="2dp"
+                android:layout_marginBottom="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/demacia_blue"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="6dp" >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editTextName"
+                        android:password="false"
+                        android:maxLines="1"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/demacia_gold" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Region:"
+                android:id="@+id/textViewRegionRequest"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/demacia_gold"
+                android:layout_marginBottom="2dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:background="@color/demacia_gold">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/demacia_blue"
+                    android:padding="4dp"
+                    android:weightSum="4">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="BR"
+                            android:tag="br"
+                            android:id="@+id/buttonBR"
+                            android:layout_weight="1"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:onClick="genericRegionClick" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="EUNE"
+                            android:tag="eune"
+                            android:id="@+id/buttonEUNE"
+                            android:layout_weight="1"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:onClick="genericRegionClick" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="EUW"
+                            android:tag="euw"
+                            android:id="@+id/buttonEUW"
+                            android:layout_weight="1"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:onClick="genericRegionClick" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="LAN"
+                            android:tag="lan"
+                            android:id="@+id/buttonLAN"
+                            android:layout_weight="1"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:onClick="genericRegionClick" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="LAS"
+                            android:tag="las"
+                            android:id="@+id/buttonLAS"
+                            android:layout_weight="1"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:onClick="genericRegionClick" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="NA"
+                            android:tag="na"
+                            android:id="@+id/buttonNA"
+                            android:layout_weight="1"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:onClick="genericRegionClick" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="OCE"
+                            android:tag="oce"
+                            android:id="@+id/buttonOCE"
+                            android:layout_weight="1"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:nestedScrollingEnabled="false"
+                            android:onClick="genericRegionClick" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="RU"
+                            android:tag="ru"
+                            android:id="@+id/buttonRU"
+                            android:layout_weight="1"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:nestedScrollingEnabled="false"
+                            android:onClick="genericRegionClick" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TR"
+                            android:tag="tr"
+                            android:id="@+id/buttonTR"
+                            android:layout_weight="1"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:nestedScrollingEnabled="false"
+                            android:onClick="genericRegionClick" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="KR"
+                            android:tag="kr"
+                            android:id="@+id/buttonKR"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:onClick="genericRegionClick" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="PBE"
+                            android:tag="pbe"
+                            android:id="@+id/buttonPBE"
+                            android:background="@color/demacia_button_blue"
+                            android:textSize="24dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:onClick="genericRegionClick" />
+
+                    </TableRow>
+                </TableLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

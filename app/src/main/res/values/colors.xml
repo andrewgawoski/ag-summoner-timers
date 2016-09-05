@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="demacia_blue">#070d3c</color>
+    <color name="demacia_gold">#e1a902</color>
+    <color name="demacia_button_blue">#6788b3</color>
+    <color name="button_ready_green">#13a509</color>
+    <color name="button_ready_red">#d20000</color>
+
+</resources>
